@@ -1,6 +1,6 @@
 # for algorithm in programmers: 팀 스터디
 > 팀 알고리즘 스터디 기록 레포지토리입니다.  
-> 매일 하나의 문제를 풀고, 리뷰하며 실력을 함께 쌓아갑니다.
+> 매일 하나의 문제를 풀고, 리뷰하며 실력을 함께 쌓아갑니다.  
 > 모든 문제는 [프로그래머스](https://school.programmers.co.kr/learn/challenges?tab=algorithm_practice_kit) 플랫폼을 이용합니다.
 
 ---
