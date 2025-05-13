@@ -53,7 +53,7 @@
 ## 👥 Contributors
 | 이름 | GitHub ID | 주요 언어 |
 |------|-----------|------------|
-| 권아영 | @Ahhhhhhyeong | Java |
-| 김훈정 | @ | Python |
-| 문지현 | @6108 | JavaScript |
-| 이혜지 | @lee02g29 | Java |  
+| 권아영 | Ahhhhhhyeong | Java |
+| 김훈정 | hxont | Python |
+| 문지현 | 6108 | JavaScript |
+| 이혜지 | lee02g29 | Java |  
