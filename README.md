@@ -20,21 +20,21 @@
 ## 📌 참여 방법
 
 1. 문제를 푼 후 `DayXX/` 폴더에 본인의 풀이 코드 & 설명 추가
-2. `dayXX-your-name` 브랜치에서 PR 생성
+2. `feature/your-name` 본인 feature 브랜치 생성
 3. 팀원 간 코드 리뷰 진행 후 main에 병합
 
 ---
 
 ## 📎 기타 자료
 
-
+- 필요 시 추가(document 폴더 생성 후 안에 추가)
 
 ---
 
 ## 👥 Contributors
 | 이름 | GitHub ID | 주요 언어 |
 |------|-----------|------------|
-| 권아영 | @Ahhhhhhyeong | Java     |
+| 권아영 | @Ahhhhhhyeong | Java |
 | 김훈정 | @ | Python |
-| 문지현 | @ | JavaScript |
-| 이혜지 | @ | Java |  
+| 문지현 | @6108 | JavaScript |
+| 이혜지 | @lee02g29 | Java |  
