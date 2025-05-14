@@ -21,19 +21,10 @@ public class Ahyeong0513 {
 
   public boolean solution(String[] phone_book) {
     // 정렬
-    phone_book = Arrays.stream(phone_book)
-        .mapToInt(Integer::parseInt)
-        .sorted()
-        .mapToObj(String::valueOf)
-        .toArray(String[]::new);
+    Arrays.sort(phone_book);
 
-    for (int i = 0; i < phone_book.length; i++) {
-      String check = phone_book[i];
-      int length = check.length();
-      for (int j = i + 1; j < phone_book.length; j++) {
-        if (check.equals(phone_book[j].substring(0, length))) return false;
-      }
-
+    for (int i = 0; i < phone_book.length-1; i++) {
+      if(phone_book[i+1].startsWith(phone_book[i])) return false;
     }
 
     return true;
