@@ -13,11 +13,15 @@ def get_today_problem_info(today: date):
         for row in reader:
             # 날짜는 p-no 기준으로 계산 (Day01 = 5월 9일)
             base_date = date(2025, 5, 12)
-            problem_date = base_date + timedelta(days=int(row["p-num"]) - 1)
+            p_num = int(row["p-num"])
 
-            # 주말 스킵
-            while problem_date.weekday() >= 5:
+            # 주말 제외하고 평일 기준으로 p_num번째 날 계산
+            problem_date = base_date
+            added_days = 0
+            while added_days < p_num - 1:
                 problem_date += timedelta(days=1)
+                if problem_date.weekday() < 5:  # 월~금
+                    added_days += 1
 
             if problem_date == today:
                 return row
