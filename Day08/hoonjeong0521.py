@@ -9,5 +9,5 @@ def solution(sizes):
         maxw = max(maxw, big)
         maxh = max(maxh, small)
 
-    return maxw * maxh  # 지갑의 최소 크기
+    return maxw * maxh
 
