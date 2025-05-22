@@ -15,9 +15,6 @@
 | 4   | 2025-05-15 | 의상               | Hash | [Day4](./Day04/README.md)     |
 | 5   | 2025-05-16 | K번째수               | Hash | [Day5](./Day05/README.md)     |
 | 6   | 2025-05-19 | 가장 큰 수  | 정렬 | [Day6](./Day06/README.md) |
-| 7   | 2025-05-20 | H-Index | 정렬 | [Day7](./Day07/README.md) |
-| 8   | 2025-05-21 | 최소직사각형 | 완전탐색 | [Day8](./Day08/README.md) |
-| 9   | 2025-05-22 | 모의고사 | 완전탐색 | [Day9](./Day09/README.md) |
 
 > 💡 **Tip**: 각 Day 폴더 안에는 문제 설명, 개인 풀이 코드, 리뷰 내용을 기록한 `README.md`가 포함됩니다.
 
