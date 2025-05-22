@@ -24,25 +24,18 @@ class Solution {
       int[] second = {2,1,2,3,2,4,2,5};
       int[] third = {3,3,1,1,2,2,4,4,5,5};  
 
-      HashMap<Integer, Integer> check = new HashMap<>(); //1,2,3번의 맞춘 개수
-      check.put(1, 0);
-      check.put(2, 0);
-      check.put(3, 0);
-      
+      int[] check = new int[3];
       for (int i = 0; i < answers.length; i++) {
-        //수포자들의 찍는방식 배열에 벗어나면 다시 0으로
-        check.replace(1, first[i % first.length]==answers[i] ? check.get(1)+1 : check.get(1));
-        check.replace(2, second[i % first.length]==answers[i] ? check.get(2)+1 : check.get(2));
-        check.replace(3, third[i % first.length]==answers[i] ? check.get(3)+1 : check.get(3));             
+        if(first[i % first.length] == answers[i]) check[0]++;
+        if(second[i % second.length] == answers[i]) check[1]++;
+        if(third[i % third.length] == answers[i]) check[2]++;
       }
-
-      int max = Collections.max(check.values());
+      int maxCorrect = Arrays.stream(check).max().getAsInt();
       List<Integer> answer = new ArrayList<>();
-
-      for(Map.Entry<Integer, Integer> entry : check.entrySet()){
-        if(max == entry.getValue()){
-          answer.add(entry.getKey());
-        }
+      for (int i = 0; i < check.length; i++) {
+        if(check[i] == maxCorrect) {
+          answer.add(i + 1);
+        }  
       }
 
       return answer.stream().mapToInt(Integer::intValue).toArray();
