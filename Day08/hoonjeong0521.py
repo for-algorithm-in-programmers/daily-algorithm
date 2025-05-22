@@ -1,6 +1,13 @@
-def solution(citations):
-    citations.sort(reverse=True)  # 내림차순 정렬
-    for i, c in enumerate(citations):
-        if i >= c:
-            return i
-    return len(citations)
+def solution(sizes):
+    maxw = 0
+    maxh = 0
+
+    for w, h in sizes:
+        # 더 큰 쪽이 가로, 작은 쪽이 세로
+        big = max(w, h)
+        small = min(w, h)
+        maxw = max(maxw, big)
+        maxh = max(maxh, small)
+
+    return maxw * maxh
+
